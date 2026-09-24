@@ -1,1 +1,45 @@
-q
+name: Build & deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 4 * * 1'   # weekly image refresh
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch TMDB images (key stays server-side)
+        run: node scripts/fetch-tmdb.mjs
+        env:
+          TMDB_KEY: ${{ secrets.TMDB_KEY }}
+      - name: Assemble site
+        run: |
+          mkdir -p _site/data
+          cp "Marvel Universe.dc.html" _site/index.html
+          cp support.js _site/
+          cp data/mcu.json data/tmdb.json _site/data/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
