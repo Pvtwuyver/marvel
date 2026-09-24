@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marvel Cinematic Universe — Complete Overview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('mcu-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+<style>
+html{--red:#E8192C;--gold:#C9A84C;--bg:#0A0A0F;--surface:#111118;--surface2:#1A1A24;--surface3:#22222F;--border:rgba(255,255,255,.08);--border2:rgba(255,255,255,.16);--text:#F0EDE8;--text2:#A89F96;--text3:#877D74;--nav:rgba(10,10,15,.9);--glow:rgba(232,25,44,.16);--p1:#4A8FD4;--p2:#7B5EA7;--p3:#C9A84C;--p4:#E8192C;--p5:#2EAF7D;--hero-bg:rgba(74,143,212,.14);--hero-fg:#7DB8EC;color-scheme:dark}
+html[data-theme="light"]{--red:#C8102E;--gold:#8A6A14;--bg:#F5F2EC;--surface:#FFFFFF;--surface2:#EFEBE4;--surface3:#E4DED5;--border:rgba(30,20,10,.1);--border2:rgba(30,20,10,.2);--text:#17141B;--text2:#4F4842;--text3:#6A625A;--nav:rgba(245,242,236,.9);--glow:rgba(200,16,46,.10);--hero-bg:rgba(44,110,180,.1);--hero-fg:#245C96;color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;line-height:1.6;min-height:100vh;transition:background .25s,color .25s}
+a{color:var(--gold)}a:hover{color:var(--red)}
+button{font:inherit;color:inherit}
+input::placeholder{color:var(--text3)}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:var(--bg);color:var(--text)">
+
+<header style="position:relative;overflow:hidden;padding:2.5rem 1.25rem 2rem;text-align:center;border-bottom:1px solid var(--border);background:radial-gradient(ellipse 90% 70% at 50% 0%, var(--glow) 0%, transparent 70%)">
+  <h1 style="font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(2.8rem,11vw,6rem);letter-spacing:.04em;line-height:1;color:var(--text)">Marvel <span style="color:var(--red)">Universe</span></h1>
+  <p style="margin-top:.75rem;color:var(--text2);font-family:'Barlow Condensed',sans-serif;font-size:clamp(.8rem,3vw,1rem);letter-spacing:.15em;text-transform:uppercase;text-wrap:balance">Complete Film Reference · All Phases · All Characters</p>
+  <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem;max-width:520px;margin:1.75rem auto 0">
+    <div style="text-align:center"><div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(1.7rem,7vw,2.8rem);color:var(--gold);line-height:1">{{ filmCount }}</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;color:var(--text3);letter-spacing:.12em;text-transform:uppercase">Films</div></div>
+    <div style="text-align:center"><div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(1.7rem,7vw,2.8rem);color:var(--gold);line-height:1">5</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;color:var(--text3);letter-spacing:.12em;text-transform:uppercase">Phases</div></div>
+    <div style="text-align:center"><div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(1.7rem,7vw,2.8rem);color:var(--gold);line-height:1">2008</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;color:var(--text3);letter-spacing:.12em;text-transform:uppercase">Started</div></div>
+    <div style="text-align:center"><div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(1.7rem,7vw,2.8rem);color:var(--gold);line-height:1">30+</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;color:var(--text3);letter-spacing:.12em;text-transform:uppercase">Heroes</div></div>
+  </div>
+</header>
+
+<nav style="position:sticky;top:0;z-index:100;background:var(--nav);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:stretch;gap:.25rem;padding:0 .5rem 0 .75rem">
+    <div style="display:flex;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3">
+        <button onClick="{{ t.onClick }}" style="background:none;border:none;border-bottom:2px solid {{ t.border }};color:{{ t.color }};min-height:52px;padding:0 .9rem;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;transition:color .2s,border-color .2s">{{ t.label }}</button>
+      </sc-for>
+    </div>
+    <button onClick="{{ toggleTheme }}" aria-label="{{ themeLabel }}" title="{{ themeLabel }}" style="align-self:center;flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid var(--border2);background:var(--surface);color:var(--text);cursor:pointer;transition:border-color .2s" style-hover="border-color:var(--red)">
+      <sc-if value="{{ isDark }}" hint-placeholder-val="{{ true }}">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      </sc-if>
+      <sc-if value="{{ isLight }}">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+      </sc-if>
+    </button>
+  </div>
+</nav>
+
+<main style="max-width:1200px;margin:0 auto;padding:clamp(1.75rem,5vw,4rem) clamp(1rem,4vw,3rem)">
+
+<sc-if value="{{ isTimeline }}" hint-placeholder-val="{{ true }}">
+  <section data-screen-label="Timeline">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(1.8rem,6vw,2.6rem);letter-spacing:.06em;line-height:1.1"><span style="color:var(--red)">Film</span> Timeline</h2>
+    <p style="margin:.35rem 0 1.5rem;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;color:var(--text3);letter-spacing:.08em;text-transform:uppercase">Ordered by theatrical release date — tap a film to expand details</p>
+    <div style="display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;margin:0 -1rem 2rem;padding:0 1rem">
+      <sc-for list="{{ phaseChips }}" as="c" hint-placeholder-count="6">
+        <button onClick="{{ c.onClick }}" style="flex-shrink:0;min-height:40px;padding:0 1rem;border-radius:999px;border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.color }};cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;transition:background .2s,color .2s">{{ c.label }}</button>
+      </sc-for>
+    </div>
+
+    <div style="position:relative;padding-left:26px">
+      <div style="position:absolute;left:6px;top:6px;bottom:0;width:2px;background:linear-gradient(180deg,var(--red),transparent)"></div>
+      <sc-for list="{{ phaseBlocks }}" as="b" hint-placeholder-count="1">
+        <div style="margin-bottom:2.5rem">
+          <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin:0 0 1rem -26px">
+            <span style="font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.1em;padding:.25rem .75rem;border-radius:4px;background:{{ b.color }};color:{{ b.ink }}">{{ b.label }}</span>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;color:var(--text2);letter-spacing:.14em;text-transform:uppercase">{{ b.name }}</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:.75rem">
+            <sc-for list="{{ b.movies }}" as="m" hint-placeholder-count="3">
+              <div id="{{ m.id }}" style="position:relative">
+                <div style="position:absolute;left:-26px;top:22px;width:14px;height:14px;border-radius:50%;background:{{ b.color }};border:3px solid var(--bg);transform:translateX(0)"></div>
+                <article style="background:{{ m.bg }};border:1px solid {{ m.border }};border-radius:10px;overflow:hidden;transition:border-color .2s,background .2s" style-hover="border-color:var(--border2)">
+                  <button onClick="{{ m.toggle }}" aria-expanded="{{ m.expanded }}" style="display:flex;width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:0">
+                    <div style="width:76px;flex-shrink:0;aspect-ratio:2/3;background:var(--surface3);display:flex;align-items:center;justify-content:center;overflow:hidden">
+                      <sc-if value="{{ m.poster }}">
+                        <img src="{{ m.poster }}" alt="{{ m.title }} poster" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+                      </sc-if>
+                      <sc-if value="{{ m.noPoster }}">
+                        <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--text3)">{{ m.initial }}</span>
+                      </sc-if>
+                    </div>
+                    <div style="flex:1;min-width:0;padding:.8rem .9rem;display:flex;flex-direction:column;gap:.35rem">
+                      <div style="display:flex;justify-content:space-between;gap:.5rem;align-items:baseline">
+                        <span style="font-family:'Barlow Condensed',sans-serif;font-size:.8rem;font-weight:600;color:var(--text3);letter-spacing:.1em">{{ m.year }}</span>
+                        <span style="color:var(--text3);font-size:.8rem;transform:rotate({{ m.rot }});transition:transform .2s">▾</span>
+                      </div>
+                      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.12rem;font-weight:600;line-height:1.2;letter-spacing:.02em;color:var(--text);text-wrap:balance">{{ m.title }}</h3>
+                      <div style="display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.15rem">
+                        <sc-for list="{{ m.heroes }}" as="h" hint-placeholder-count="1">
+                          <span style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:.1rem .45rem;border-radius:3px;background:var(--hero-bg);color:var(--hero-fg)">{{ h }}</span>
+                        </sc-for>
+                      </div>
+                    </div>
+                  </button>
+                  <sc-if value="{{ m.expanded }}">
+                    <div style="padding:.9rem 1rem 1.1rem;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:.5rem">
+                      <p style="font-size:.92rem;color:var(--text2);line-height:1.6;text-wrap:pretty">{{ m.desc }}</p>
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;color:var(--text3);letter-spacing:.1em;text-transform:uppercase;margin-top:.4rem">Characters</div>
+                      <div style="display:flex;flex-wrap:wrap;gap:.35rem">
+                        <sc-for list="{{ m.chars }}" as="ch">
+                          <button onClick="{{ ch.onClick }}" disabled="{{ ch.disabled }}" style="font-family:'Barlow Condensed',sans-serif;font-size:.82rem;min-height:32px;padding:0 .7rem;border-radius:999px;background:var(--surface3);border:1px solid {{ ch.border }};color:{{ ch.color }};cursor:{{ ch.cursor }};transition:border-color .2s" style-hover="border-color:var(--red)">{{ ch.name }}</button>
+                        </sc-for>
+                      </div>
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;color:var(--text3);letter-spacing:.1em;text-transform:uppercase;margin-top:.6rem">Key Connections</div>
+                      <ul style="padding-left:1.1rem;font-size:.88rem;color:var(--text2);line-height:1.6;display:flex;flex-direction:column;gap:.15rem">
+                        <sc-for list="{{ m.connections }}" as="cn"><li>{{ cn }}</li></sc-for>
+                      </ul>
+                    </div>
+                  </sc-if>
+                </article>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isCharacters }}">
+  <section data-screen-label="Characters">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(1.8rem,6vw,2.6rem);letter-spacing:.06em;line-height:1.1"><span style="color:var(--red)">Key</span> Characters</h2>
+    <p style="margin:.35rem 0 1.5rem;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;color:var(--text3);letter-spacing:.08em;text-transform:uppercase">Major heroes and villains — colored dots show film appearances per phase</p>
+    <label style="position:relative;display:block;max-width:420px;margin-bottom:1.5rem">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="position:absolute;left:.85rem;top:50%;transform:translateY(-50%);color:var(--text3)"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input type="search" value="{{ q }}" onInput="{{ onSearch }}" placeholder="Search character..." aria-label="Search character" style="width:100%;min-height:46px;background:var(--surface);border:1px solid var(--border2);border-radius:8px;color:var(--text);padding:0 1rem 0 2.5rem;font-family:'Barlow',sans-serif;font-size:1rem;outline:none" style-focus="border-color:var(--red)">
+    </label>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(46%,190px),1fr));gap:clamp(.6rem,2vw,1rem)">
+      <sc-for list="{{ chars }}" as="c" hint-placeholder-count="6">
+        <article id="{{ c.id }}" style="background:var(--surface);border:1px solid {{ c.border }};border-radius:10px;overflow:hidden;box-shadow:{{ c.shadow }};transition:border-color .3s,box-shadow .3s" style-hover="border-color:var(--border2)">
+          <div style="position:relative;aspect-ratio:3/4;background:var(--surface3);overflow:hidden;display:flex;align-items:center;justify-content:center">
+            <sc-if value="{{ c.img }}">
+              <img src="{{ c.img }}" alt="{{ c.alias }} in {{ c.film }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:{{ c.pos }};display:block">
+            </sc-if>
+            <sc-if value="{{ c.noImg }}">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:var(--text3)">{{ c.initials }}</span>
+            </sc-if>
+            <sc-if value="{{ c.film }}">
+              <span style="position:absolute;left:0;right:0;bottom:0;padding:1.5rem .6rem .45rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,.82));color:#F0EDE8;font-family:'Barlow Condensed',sans-serif;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;line-height:1.25">{{ c.film }}</span>
+            </sc-if>
+          </div>
+          <div style="padding:.7rem .75rem .8rem;display:flex;flex-direction:column;gap:.15rem">
+            <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.02rem;font-weight:600;line-height:1.2;letter-spacing:.02em;color:{{ c.color }}">{{ c.first }}</h3>
+            <div style="font-size:.8rem;color:var(--text2);line-height:1.3">{{ c.alias }}</div>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:.78rem;color:var(--text3);letter-spacing:.05em;margin-top:.35rem">{{ c.count }}</div>
+            <div style="display:flex;flex-wrap:wrap;gap:.2rem;margin-top:.15rem">
+              <sc-for list="{{ c.dots }}" as="d">
+                <button onClick="{{ d.onClick }}" title="{{ d.title }}" aria-label="{{ d.title }}" style="width:20px;height:20px;padding:0;border:none;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center">
+                  <span style="width:9px;height:9px;border-radius:50%;background:{{ d.color }};transition:transform .15s" style-hover="transform:scale(1.5)"></span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+    <sc-if value="{{ noChars }}">
+      <p style="color:var(--text3);font-family:'Barlow Condensed',sans-serif;letter-spacing:.06em;text-transform:uppercase;font-size:.9rem;padding:2rem 0">No characters match “{{ q }}”</p>
+    </sc-if>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isConnections }}">
+  <section data-screen-label="Connections">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(1.8rem,6vw,2.6rem);letter-spacing:.06em;line-height:1.1"><span style="color:var(--red)">Film</span> Connections</h2>
+    <p style="margin:.35rem 0 1.5rem;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;color:var(--text3);letter-spacing:.08em;text-transform:uppercase">Key narrative threads linking films across the MCU</p>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin-bottom:1.75rem">
+      <sc-for list="{{ legend }}" as="l" hint-placeholder-count="4">
+        <div style="display:flex;align-items:center;gap:.5rem;font-family:'Barlow Condensed',sans-serif;font-size:.9rem;color:var(--text2);letter-spacing:.05em"><span style="width:10px;height:10px;border-radius:50%;background:{{ l.color }}"></span>{{ l.label }}</div>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:.75rem">
+      <sc-for list="{{ connections }}" as="c" hint-placeholder-count="4">
+        <article style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.45rem">
+          <div style="display:flex;align-items:center;gap:.5rem">
+            <span style="width:10px;height:10px;border-radius:50%;flex-shrink:0;background:{{ c.color }}"></span>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;color:var(--text3);letter-spacing:.1em;text-transform:uppercase">{{ c.typeLabel }}</span>
+          </div>
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.08rem;font-weight:600;letter-spacing:.02em;line-height:1.25">{{ c.title }}</h3>
+          <p style="font-size:.9rem;color:var(--text2);line-height:1.55;text-wrap:pretty">{{ c.desc }}</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.2rem">
+            <sc-for list="{{ c.films }}" as="f">
+              <button onClick="{{ f.onClick }}" style="font-family:'Barlow Condensed',sans-serif;font-size:.78rem;min-height:28px;padding:0 .5rem;border-radius:4px;background:var(--surface3);color:var(--text2);border:1px solid var(--border);cursor:pointer" style-hover="border-color:var(--red);color:var(--text)">{{ f.title }}</button>
+            </sc-for>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+</sc-if>
+
+</main>
+
+<footer style="text-align:center;padding:2.5rem 1.25rem calc(2rem + env(safe-area-inset-bottom));border-top:1px solid var(--border);color:var(--text3);font-size:.82rem;font-family:'Barlow Condensed',sans-serif;letter-spacing:.06em;text-wrap:balance">Marvel Cinematic Universe reference — for informational purposes only · Marvel characters and films are property of Marvel Studios / Disney · Images provided by <a href="https://www.themoviedb.org" target="_blank" rel="noopener">TMDB</a></footer>
+
+<sc-if value="{{ showTop }}">
+  <button onClick="{{ toTop }}" aria-label="Back to top" style="position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom));z-index:200;width:48px;height:48px;border-radius:50%;border:none;background:var(--red);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3)">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+  </button>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const IMG = 'https://image.tmdb.org/t/p/';
+const PHASE = { 1: '#4A8FD4', 2: '#7B5EA7', 3: '#C9A84C', 4: '#E8192C', 5: '#2EAF7D' };
+const INK = { 1: '#fff', 2: '#fff', 3: '#1a1400', 4: '#fff', 5: '#fff' };
+const CHAR = ['#4A8FD4', '#E8192C', '#C9A84C', '#7B5EA7', '#2EAF7D', '#D4825A', '#5AA7A7', '#A77B5E'];
+const CONN = {
+  'shared-hero': ['Shared Hero', '#4A8FD4'],
+  origin: ['Origin / Sequel', 'var(--gold)'],
+  villain: ['Shared Villain', 'var(--red)'],
+  'post-credits': ['Post-Credits Setup', '#2EAF7D']
+};
+const slug = s => 'char-' + s.replace(/[^a-zA-Z]/g, '_');
+
+class Component extends DCLogic {
+  state = { tab: 'timeline', phase: 'all', open: {}, q: '', hi: null, data: null, tmdb: {}, theme: 'dark', showTop: false };
+
+  componentDidMount() {
+    this.setState({ theme: document.documentElement.getAttribute('data-theme') || 'dark' });
+    const j = u => fetch(u, { cache: 'no-cache' }).then(r => r.ok ? r.json() : {}).catch(() => ({}));
+    Promise.all([j('data/mcu.json'), j('data/tmdb.json')]).then(([data, tmdb]) => this.setState({ data, tmdb }));
+    this.onScroll = () => { const v = window.scrollY > 500; if (v !== this.state.showTop) this.setState({ showTop: v }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); clearTimeout(this.hiT); }
+
+  scrollToEl(id, offset = 90) {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const el = document.getElementById(id);
+      if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+    }));
+  }
+  setTab(tab) {
+    this.setState({ tab });
+    const nav = document.querySelector('nav');
+    if (nav && window.scrollY > nav.offsetTop) window.scrollTo({ top: nav.offsetTop, behavior: 'smooth' });
+  }
+  findChar(pill) {
+    const cs = (this.state.data && this.state.data.characters) || [];
+    const p = pill.toLowerCase(), pFirst = p.split(' / ')[0];
+    return cs.find(c => {
+      const n = c.name.toLowerCase(), parts = n.split(' / ');
+      return n === p || parts.includes(p) || c.alias.toLowerCase() === p || parts[0] === pFirst;
+    });
+  }
+  goChar(c) {
+    clearTimeout(this.hiT);
+    this.setState({ tab: 'characters', q: '', hi: c.name });
+    this.scrollToEl(slug(c.name), window.innerHeight / 3);
+    this.hiT = setTimeout(() => this.setState({ hi: null }), 2200);
+  }
+  goFilm(title) {
+    this.setState(s => ({ tab: 'timeline', phase: 'all', open: { ...s.open, [title]: true } }));
+    this.scrollToEl('film-' + slug(title));
+  }
+
+  renderVals() {
+    const { tab, phase, open, q, hi, data, tmdb, theme } = this.state;
+    const d = data || {};
+    const movies = d.movies || [], characters = d.characters || [], phaseNames = d.phaseNames || {};
+    const tm = tmdb.movies || {}, tc = tmdb.characters || {};
+
+    const tabs = [['timeline', 'Timeline'], ['characters', 'Characters'], ['connections', 'Connections']].map(([id, label]) => ({
+      label, onClick: () => this.setTab(id),
+      color: tab === id ? 'var(--text)' : 'var(--text2)',
+      border: tab === id ? 'var(--red)' : 'transparent'
+    }));
+
+    const phaseChips = ['all', 1, 2, 3, 4, 5].map(p => {
+      const on = String(phase) === String(p);
+      return {
+        label: p === 'all' ? 'All Phases' : 'Phase ' + p,
+        onClick: () => this.setState({ phase: p }),
+        bg: on ? (p === 'all' ? 'var(--red)' : PHASE[p]) : 'var(--surface2)',
+        color: on ? (p === 'all' ? '#fff' : INK[p]) : 'var(--text2)',
+        border: on ? 'transparent' : 'var(--border)'
+      };
+    });
+
+    const phaseBlocks = [1, 2, 3, 4, 5].filter(p => phase === 'all' || p === phase).map(p => ({
+      label: 'Phase ' + p, name: phaseNames[p], color: PHASE[p], ink: INK[p],
+      movies: movies.filter(m => m.phase === p).map(m => {
+        const ex = !!open[m.title];
+        const pp = tm[m.tmdbId] && tm[m.tmdbId].poster;
+        return {
+          id: 'film-' + slug(m.title), title: m.title, year: m.year, desc: m.desc,
+          poster: pp ? IMG + 'w185' + pp : null, noPoster: !pp, initial: m.title[0],
+          heroes: m.heroes.slice(0, 3), connections: m.connections || [],
+          expanded: ex, rot: ex ? '180deg' : '0deg',
+          bg: ex ? 'var(--surface2)' : 'var(--surface)', border: ex ? 'var(--red)' : 'var(--border)',
+          toggle: () => this.setState(s => ({ open: { ...s.open, [m.title]: !s.open[m.title] } })),
+          chars: m.chars.map(n => {
+            const c = this.findChar(n);
+            return {
+              name: n, disabled: !c, cursor: c ? 'pointer' : 'default',
+              color: c ? 'var(--text)' : 'var(--text2)', border: c ? 'var(--border2)' : 'var(--border)',
+              onClick: c ? () => this.goChar(c) : undefined
+            };
+          })
+        };
+      })
+    })).filter(b => b.movies.length);
+
+    const ql = q.trim().toLowerCase();
+    const chars = characters.filter(c => !ql || c.name.toLowerCase().includes(ql) || c.alias.toLowerCase().includes(ql)).map(c => {
+      const t = tc[c.name] || {};
+      const src = c.imageOverride || t.image;
+      const img = src ? (src.startsWith('http') ? src : IMG + (t.type === 'backdrop' ? 'w780' : 'w500') + src) : null;
+      const first = c.name.split('/')[0].trim();
+      const on = hi === c.name;
+      return {
+        id: slug(c.name), first, alias: c.alias, color: CHAR[c.color],
+        img, noImg: !img, film: img ? (t.film || '') : '', pos: t.type === 'backdrop' ? 'center' : 'center top',
+        initials: first.split(' ').map(w => w[0]).join('').slice(0, 2),
+        count: c.films.length + ' film' + (c.films.length !== 1 ? 's' : ''),
+        border: on ? 'var(--red)' : 'var(--border)', shadow: on ? '0 0 0 3px var(--glow)' : 'none',
+        dots: c.films.map((f, i) => ({ title: f, color: PHASE[c.phases[i]], onClick: () => this.goFilm(f) }))
+      };
+    });
+
+    const connections = (d.connections || []).map(c => ({
+      title: c.title, desc: c.desc, typeLabel: CONN[c.type][0], color: CONN[c.type][1],
+      films: c.films.map(f => ({ title: f, onClick: () => this.goFilm(f) }))
+    }));
+
+    return {
+      filmCount: movies.length || 36, tabs, phaseChips, phaseBlocks, chars, connections,
+      legend: Object.values(CONN).map(([label, color]) => ({ label, color })),
+      noChars: !!data && chars.length === 0, q,
+      onSearch: e => this.setState({ q: e.target.value }),
+      isTimeline: tab === 'timeline', isCharacters: tab === 'characters', isConnections: tab === 'connections',
+      isDark: theme === 'dark', isLight: theme === 'light',
+      themeLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+      toggleTheme: () => {
+        const next = theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('mcu-theme', next); } catch (e) {}
+        this.setState({ theme: next });
+      },
+      showTop: this.state.showTop, toTop: () => window.scrollTo({ top: 0, behavior: 'smooth' })
+    };
+  }
+}
+</script>
+</body>
+</html>
