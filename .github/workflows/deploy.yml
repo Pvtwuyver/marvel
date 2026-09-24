@@ -34,7 +34,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site/data
-          cp "Marvel Universe.dc.html" _site/index.html
+          if [ -f index.html ]; then cp index.html _site/index.html; else cp "Marvel Universe.dc.html" _site/index.html; fi
           cp support.js _site/
           cp data/mcu.json data/tmdb.json _site/data/
       - uses: actions/configure-pages@v5
