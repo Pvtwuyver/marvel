@@ -1,1 +1,1503 @@
-w
+{
+ "phaseNames": {
+  "1": "The Infinity Saga Begins",
+  "2": "Expanding the Universe",
+  "3": "The Infinity Saga Concludes",
+  "4": "The Multiverse Saga Begins",
+  "5": "The Multiverse Saga"
+ },
+ "movies": [
+  {
+   "phase": 1,
+   "year": "2008",
+   "title": "Iron Man",
+   "tmdbId": 1726,
+   "heroes": [
+    "Tony Stark / Iron Man"
+   ],
+   "chars": [
+    "Tony Stark / Iron Man",
+    "Pepper Potts",
+    "Nick Fury",
+    "Rhodey"
+   ],
+   "desc": "Weapons manufacturer Tony Stark builds a powered suit of armor to escape captivity and becomes Iron Man. The first MCU film, introducing SHIELD and setting the shared universe in motion.",
+   "connections": [
+    "Post-credits: Nick Fury introduces the Avengers Initiative"
+   ]
+  },
+  {
+   "phase": 1,
+   "year": "2008",
+   "title": "The Incredible Hulk",
+   "tmdbId": 1724,
+   "heroes": [
+    "Bruce Banner / Hulk"
+   ],
+   "chars": [
+    "Bruce Banner / Hulk",
+    "Betty Ross",
+    "Thaddeus Ross",
+    "Emil Blonsky / Abomination"
+   ],
+   "desc": "Bruce Banner struggles to cure himself of the Hulk while pursued by General Ross. Connects to the broader universe via a Tony Stark cameo.",
+   "connections": [
+    "Tony Stark cameo links to Iron Man 2",
+    "Abomination returns in She-Hulk"
+   ]
+  },
+  {
+   "phase": 1,
+   "year": "2010",
+   "title": "Iron Man 2",
+   "tmdbId": 10138,
+   "heroes": [
+    "Tony Stark / Iron Man"
+   ],
+   "chars": [
+    "Tony Stark / Iron Man",
+    "Nick Fury",
+    "Black Widow",
+    "War Machine",
+    "Whiplash"
+   ],
+   "desc": "Tony faces government pressure, a rivalry with Ivan Vanko, and his own health crisis. Introduces Black Widow and War Machine.",
+   "connections": [
+    "Black Widow debuts here",
+    "Nick Fury coordinates Avengers recruitment"
+   ]
+  },
+  {
+   "phase": 1,
+   "year": "2011",
+   "title": "Thor",
+   "tmdbId": 10195,
+   "heroes": [
+    "Thor"
+   ],
+   "chars": [
+    "Thor",
+    "Loki",
+    "Jane Foster",
+    "Odin",
+    "Heimdall",
+    "Hawkeye"
+   ],
+   "desc": "The Asgardian prince Thor is banished to Earth and must prove himself worthy. Introduces the Nine Realms and cosmic elements to the MCU.",
+   "connections": [
+    "Post-credits: Tesseract/Cosmic Cube revealed",
+    "Hawkeye cameo"
+   ]
+  },
+  {
+   "phase": 1,
+   "year": "2011",
+   "title": "Captain America: The First Avenger",
+   "tmdbId": 1771,
+   "heroes": [
+    "Steve Rogers / Captain America"
+   ],
+   "chars": [
+    "Steve Rogers / Captain America",
+    "Peggy Carter",
+    "Howard Stark",
+    "Bucky Barnes",
+    "Red Skull"
+   ],
+   "desc": "Set in WWII, Steve Rogers becomes a super-soldier and defeats HYDRA's Red Skull. The Tesseract plays a central role.",
+   "connections": [
+    "Tesseract links to Thor and The Avengers",
+    "Howard Stark links to Iron Man",
+    "Bucky becomes the Winter Soldier"
+   ]
+  },
+  {
+   "phase": 1,
+   "year": "2012",
+   "title": "The Avengers",
+   "tmdbId": 24428,
+   "heroes": [
+    "Tony Stark / Iron Man",
+    "Steve Rogers / Captain America",
+    "Thor",
+    "Bruce Banner / Hulk",
+    "Black Widow",
+    "Hawkeye"
+   ],
+   "chars": [
+    "Tony Stark / Iron Man",
+    "Steve Rogers / Captain America",
+    "Thor",
+    "Bruce Banner / Hulk",
+    "Black Widow",
+    "Hawkeye",
+    "Loki",
+    "Nick Fury",
+    "Phil Coulson",
+    "Thanos"
+   ],
+   "desc": "Earth's mightiest heroes unite to stop Loki and the alien Chitauri invasion. The culmination of Phase 1.",
+   "connections": [
+    "Post-credits: Thanos revealed for the first time",
+    "Chitauri Scepter leads to Age of Ultron"
+   ]
+  },
+  {
+   "phase": 2,
+   "year": "2013",
+   "title": "Iron Man 3",
+   "tmdbId": 68721,
+   "heroes": [
+    "Tony Stark / Iron Man"
+   ],
+   "chars": [
+    "Tony Stark / Iron Man",
+    "Pepper Potts",
+    "Rhodey",
+    "Aldrich Killian",
+    "The Mandarin"
+   ],
+   "desc": "Tony battles anxiety after the events of The Avengers while a terrorist called the Mandarin emerges.",
+   "connections": [
+    "Tony destroys all suits — but returns in Age of Ultron"
+   ]
+  },
+  {
+   "phase": 2,
+   "year": "2013",
+   "title": "Thor: The Dark World",
+   "tmdbId": 76338,
+   "heroes": [
+    "Thor"
+   ],
+   "chars": [
+    "Thor",
+    "Loki",
+    "Jane Foster",
+    "Malekith",
+    "Odin"
+   ],
+   "desc": "Thor must stop the dark elf Malekith from plunging the universe into darkness using the Aether, revealed to be an Infinity Stone.",
+   "connections": [
+    "Aether = Reality Stone (Infinity Stone)",
+    "Post-credits: Guardians of the Galaxy teased with Collector"
+   ]
+  },
+  {
+   "phase": 2,
+   "year": "2014",
+   "title": "Captain America: The Winter Soldier",
+   "tmdbId": 100402,
+   "heroes": [
+    "Steve Rogers / Captain America"
+   ],
+   "chars": [
+    "Steve Rogers / Captain America",
+    "Black Widow",
+    "Nick Fury",
+    "Sam Wilson / Falcon",
+    "Bucky Barnes / Winter Soldier",
+    "Alexander Pierce"
+   ],
+   "desc": "Steve Rogers uncovers a HYDRA conspiracy within SHIELD, while facing a mysterious assassin revealed to be his old friend Bucky Barnes.",
+   "connections": [
+    "SHIELD dissolved",
+    "Falcon joins the MCU",
+    "Mid-credits: Scarlet Witch and Quicksilver teased"
+   ]
+  },
+  {
+   "phase": 2,
+   "year": "2014",
+   "title": "Guardians of the Galaxy",
+   "tmdbId": 118340,
+   "heroes": [
+    "Peter Quill / Star-Lord",
+    "Gamora",
+    "Drax",
+    "Rocket",
+    "Groot"
+   ],
+   "chars": [
+    "Peter Quill / Star-Lord",
+    "Gamora",
+    "Drax",
+    "Rocket",
+    "Groot",
+    "Nebula",
+    "Ronan",
+    "Thanos",
+    "Yondu"
+   ],
+   "desc": "A ragtag group of cosmic misfits team up to prevent the Power Stone from falling into the wrong hands.",
+   "connections": [
+    "Power Stone appears in Infinity War",
+    "Thanos established as main threat",
+    "Nebula key in Endgame"
+   ]
+  },
+  {
+   "phase": 2,
+   "year": "2015",
+   "title": "Avengers: Age of Ultron",
+   "tmdbId": 99861,
+   "heroes": [
+    "Tony Stark / Iron Man",
+    "Steve Rogers / Captain America",
+    "Thor",
+    "Bruce Banner / Hulk",
+    "Black Widow",
+    "Hawkeye"
+   ],
+   "chars": [
+    "Tony Stark / Iron Man",
+    "Steve Rogers / Captain America",
+    "Thor",
+    "Bruce Banner / Hulk",
+    "Black Widow",
+    "Hawkeye",
+    "Wanda Maximoff / Scarlet Witch",
+    "Vision",
+    "Ultron"
+   ],
+   "desc": "Tony Stark creates Ultron, an AI peacekeeping program that turns against humanity. Introduces Scarlet Witch, Quicksilver, and Vision.",
+   "connections": [
+    "Mind Stone creates Vision",
+    "Wakanda first mentioned",
+    "Post-credits: Thanos gets the Infinity Gauntlet"
+   ]
+  },
+  {
+   "phase": 2,
+   "year": "2015",
+   "title": "Ant-Man",
+   "tmdbId": 102899,
+   "heroes": [
+    "Scott Lang / Ant-Man"
+   ],
+   "chars": [
+    "Scott Lang / Ant-Man",
+    "Hope van Dyne",
+    "Hank Pym",
+    "Darren Cross / Yellowjacket"
+   ],
+   "desc": "Master thief Scott Lang dons a powerful suit to pull off a heist with massive consequences. Introduces Pym Particles and the quantum realm.",
+   "connections": [
+    "Quantum Realm key to time travel in Endgame",
+    "Post-credits: Bucky and Falcon appear"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2016",
+   "title": "Captain America: Civil War",
+   "tmdbId": 271110,
+   "heroes": [
+    "Steve Rogers / Captain America",
+    "Tony Stark / Iron Man"
+   ],
+   "chars": [
+    "Steve Rogers / Captain America",
+    "Tony Stark / Iron Man",
+    "Black Widow",
+    "Bucky Barnes",
+    "Sam Wilson / Falcon",
+    "Wanda Maximoff",
+    "Vision",
+    "Black Panther",
+    "Hawkeye",
+    "Scott Lang / Ant-Man",
+    "Spider-Man"
+   ],
+   "desc": "The Avengers fracture over the Sokovia Accords. Black Panther and Spider-Man debut.",
+   "connections": [
+    "Avengers split shapes Infinity War",
+    "Black Panther introduced",
+    "Spider-Man (Tom Holland) introduced"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2016",
+   "title": "Doctor Strange",
+   "tmdbId": 284052,
+   "heroes": [
+    "Stephen Strange / Doctor Strange"
+   ],
+   "chars": [
+    "Stephen Strange / Doctor Strange",
+    "Wong",
+    "Ancient One",
+    "Mordo",
+    "Dormammu"
+   ],
+   "desc": "Neurosurgeon Stephen Strange discovers the mystic arts and becomes Earth's Sorcerer Supreme. Introduces the Time Stone.",
+   "connections": [
+    "Time Stone (Infinity Stone) introduced",
+    "Kamar-Taj and the multiverse key to Multiverse of Madness"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2017",
+   "title": "Guardians of the Galaxy Vol. 2",
+   "tmdbId": 283995,
+   "heroes": [
+    "Peter Quill / Star-Lord",
+    "Gamora",
+    "Drax",
+    "Rocket",
+    "Groot"
+   ],
+   "chars": [
+    "Peter Quill / Star-Lord",
+    "Gamora",
+    "Drax",
+    "Rocket",
+    "Groot",
+    "Nebula",
+    "Mantis",
+    "Yondu",
+    "Ego"
+   ],
+   "desc": "The Guardians discover the truth about Peter Quill's father Ego, a living planet.",
+   "connections": [
+    "Mantis joins the Guardians",
+    "Nebula arc leads to Endgame",
+    "Post-credits: Adam Warlock teased"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2017",
+   "title": "Spider-Man: Homecoming",
+   "tmdbId": 315635,
+   "heroes": [
+    "Peter Parker / Spider-Man"
+   ],
+   "chars": [
+    "Peter Parker / Spider-Man",
+    "Tony Stark / Iron Man",
+    "Ned Leeds",
+    "Adrian Toomes / Vulture",
+    "Happy Hogan"
+   ],
+   "desc": "Peter Parker balances high school life while proving himself as Spider-Man, mentored by Tony Stark.",
+   "connections": [
+    "Iron Man mentorship critical in Endgame",
+    "Sets up Spider-Man in Infinity War"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2017",
+   "title": "Thor: Ragnarok",
+   "tmdbId": 284053,
+   "heroes": [
+    "Thor",
+    "Bruce Banner / Hulk"
+   ],
+   "chars": [
+    "Thor",
+    "Loki",
+    "Bruce Banner / Hulk",
+    "Valkyrie",
+    "Hela",
+    "Grandmaster",
+    "Korg"
+   ],
+   "desc": "Thor faces his sister Hela, the goddess of death, who destroys Mjolnir. He must escape Sakaar and save Asgard.",
+   "connections": [
+    "Asgard destroyed — Asgardians become refugees",
+    "Valkyrie joins the MCU",
+    "Post-credits: Thanos's ship appears"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2018",
+   "title": "Black Panther",
+   "tmdbId": 284054,
+   "heroes": [
+    "T'Challa / Black Panther"
+   ],
+   "chars": [
+    "T'Challa / Black Panther",
+    "Shuri",
+    "Okoye",
+    "Nakia",
+    "Erik Killmonger",
+    "M'Baku",
+    "Everett Ross"
+   ],
+   "desc": "T'Challa returns to Wakanda to claim the throne, but faces a challenger in Erik Killmonger. Wakanda is revealed to the world.",
+   "connections": [
+    "Wakanda central in Infinity War and Endgame",
+    "Post-credits: Bucky in Wakanda"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2018",
+   "title": "Avengers: Infinity War",
+   "tmdbId": 299536,
+   "heroes": [
+    "Tony Stark / Iron Man",
+    "Steve Rogers / Captain America",
+    "Thor",
+    "Doctor Strange",
+    "Spider-Man",
+    "Black Panther",
+    "Peter Quill / Star-Lord"
+   ],
+   "chars": [
+    "Tony Stark / Iron Man",
+    "Steve Rogers / Captain America",
+    "Thor",
+    "Bruce Banner / Hulk",
+    "Black Widow",
+    "Wanda Maximoff",
+    "Vision",
+    "Doctor Strange",
+    "Spider-Man",
+    "Black Panther",
+    "Peter Quill / Star-Lord",
+    "Gamora",
+    "Thanos",
+    "Loki"
+   ],
+   "desc": "Thanos collects all six Infinity Stones to wipe out half of all life in the universe. Ends with the Snap.",
+   "connections": [
+    "All 6 Infinity Stones collected",
+    "The Snap erases half of all life",
+    "Post-credits: Nick Fury activates Captain Marvel's pager"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2018",
+   "title": "Ant-Man and the Wasp",
+   "tmdbId": 363088,
+   "heroes": [
+    "Scott Lang / Ant-Man",
+    "Hope van Dyne / Wasp"
+   ],
+   "chars": [
+    "Scott Lang / Ant-Man",
+    "Hope van Dyne / Wasp",
+    "Hank Pym",
+    "Janet van Dyne",
+    "Cassie Lang",
+    "Ghost"
+   ],
+   "desc": "Scott Lang and Hope van Dyne team up to rescue Janet van Dyne from the quantum realm. Set simultaneously with Infinity War.",
+   "connections": [
+    "Quantum Realm travel enables Endgame's time heist",
+    "Post-credits: Scott trapped during the Snap"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2019",
+   "title": "Captain Marvel",
+   "tmdbId": 299537,
+   "heroes": [
+    "Carol Danvers / Captain Marvel"
+   ],
+   "chars": [
+    "Carol Danvers / Captain Marvel",
+    "Nick Fury",
+    "Maria Rambeau",
+    "Talos",
+    "Yon-Rogg",
+    "Monica Rambeau"
+   ],
+   "desc": "Set in the 1990s, Carol Danvers discovers her powers and past while helping the Skrulls.",
+   "connections": [
+    "Space Stone / Tesseract appears",
+    "Post-credits: Carol responds to Fury's pager (links to Endgame)",
+    "Monica Rambeau key in WandaVision"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2019",
+   "title": "Avengers: Endgame",
+   "tmdbId": 299534,
+   "heroes": [
+    "Tony Stark / Iron Man",
+    "Steve Rogers / Captain America",
+    "Thor",
+    "Bruce Banner / Hulk",
+    "Black Widow",
+    "Hawkeye",
+    "Carol Danvers / Captain Marvel",
+    "Scott Lang / Ant-Man"
+   ],
+   "chars": [
+    "Tony Stark / Iron Man",
+    "Steve Rogers / Captain America",
+    "Thor",
+    "Bruce Banner / Hulk",
+    "Black Widow",
+    "Hawkeye",
+    "Carol Danvers / Captain Marvel",
+    "Scott Lang / Ant-Man",
+    "Wanda Maximoff",
+    "Nebula",
+    "Thanos",
+    "Doctor Strange",
+    "Spider-Man",
+    "Black Panther"
+   ],
+   "desc": "The surviving Avengers use time travel to collect the Infinity Stones and reverse the Snap. Tony Stark sacrifices himself. The definitive conclusion of the Infinity Saga.",
+   "connections": [
+    "Iron Man dies — closes a 22-film arc",
+    "Steve passes shield to Sam Wilson",
+    "Thor joins the Guardians"
+   ]
+  },
+  {
+   "phase": 3,
+   "year": "2019",
+   "title": "Spider-Man: Far From Home",
+   "tmdbId": 429617,
+   "heroes": [
+    "Peter Parker / Spider-Man"
+   ],
+   "chars": [
+    "Peter Parker / Spider-Man",
+    "Mysterio",
+    "Nick Fury",
+    "Happy Hogan",
+    "MJ",
+    "Ned Leeds"
+   ],
+   "desc": "Peter Parker goes on a school trip to Europe and is pulled into a new adventure with Mysterio. Deals with the aftermath of Endgame.",
+   "connections": [
+    "Directly follows Endgame",
+    "Post-credits: Spider-Man's identity revealed",
+    "Nick Fury is actually a Skrull"
+   ]
+  },
+  {
+   "phase": 4,
+   "year": "2021",
+   "title": "Black Widow",
+   "tmdbId": 497698,
+   "heroes": [
+    "Natasha Romanoff / Black Widow"
+   ],
+   "chars": [
+    "Natasha Romanoff / Black Widow",
+    "Yelena Belova",
+    "Alexei / Red Guardian",
+    "Melina",
+    "Dreykov / Taskmaster"
+   ],
+   "desc": "Set between Civil War and Infinity War, Natasha confronts her past in the Red Room. Introduces Yelena Belova.",
+   "connections": [
+    "Yelena continues in Hawkeye series",
+    "Post-credits: Yelena recruited by Valentina"
+   ]
+  },
+  {
+   "phase": 4,
+   "year": "2021",
+   "title": "Shang-Chi and the Legend of the Ten Rings",
+   "tmdbId": 566525,
+   "heroes": [
+    "Shang-Chi"
+   ],
+   "chars": [
+    "Shang-Chi",
+    "Katy",
+    "Xu Wenwu / The Mandarin",
+    "Xialing",
+    "Wong"
+   ],
+   "desc": "Shang-Chi confronts his father Wenwu and the ancient Ten Rings organization.",
+   "connections": [
+    "Ten Rings organization finally revealed (from Iron Man 1)",
+    "Post-credits: Wong and Avengers analyze the Ten Rings"
+   ]
+  },
+  {
+   "phase": 4,
+   "year": "2021",
+   "title": "Eternals",
+   "tmdbId": 524434,
+   "heroes": [
+    "Sersi",
+    "Ikaris",
+    "Ajak",
+    "Thena",
+    "Gilgamesh"
+   ],
+   "chars": [
+    "Sersi",
+    "Ikaris",
+    "Ajak",
+    "Thena",
+    "Gilgamesh",
+    "Makkari",
+    "Phastos",
+    "Kingo",
+    "Sprite",
+    "Druig",
+    "Arishem",
+    "Dane Whitman"
+   ],
+   "desc": "A group of immortal beings, hidden among humanity for thousands of years, reunite against the Deviants.",
+   "connections": [
+    "Post-credits: Starfox (Thanos's brother) and Pip appear",
+    "Dane Whitman becomes Black Knight"
+   ]
+  },
+  {
+   "phase": 4,
+   "year": "2021",
+   "title": "Spider-Man: No Way Home",
+   "tmdbId": 634649,
+   "heroes": [
+    "Peter Parker / Spider-Man"
+   ],
+   "chars": [
+    "Peter Parker / Spider-Man",
+    "Doctor Strange",
+    "MJ",
+    "Doctor Octopus",
+    "Green Goblin",
+    "Tobey Maguire's Spider-Man",
+    "Andrew Garfield's Spider-Man"
+   ],
+   "desc": "After his identity is revealed, Peter asks Doctor Strange for help. The spell goes wrong, pulling villains and Spider-Men from other universes into the MCU.",
+   "connections": [
+    "Multiverse opens — central to Multiverse of Madness",
+    "All three Spider-Men appear",
+    "Peter's identity wiped — fresh start"
+   ]
+  },
+  {
+   "phase": 4,
+   "year": "2022",
+   "title": "Doctor Strange in the Multiverse of Madness",
+   "tmdbId": 453395,
+   "heroes": [
+    "Stephen Strange / Doctor Strange"
+   ],
+   "chars": [
+    "Stephen Strange / Doctor Strange",
+    "Wanda Maximoff / Scarlet Witch",
+    "America Chavez",
+    "Wong",
+    "Reed Richards",
+    "Professor X"
+   ],
+   "desc": "Strange travels through the multiverse with America Chavez, pursued by a corrupted Wanda Maximoff wielding the Darkhold.",
+   "connections": [
+    "Wanda arc follows WandaVision",
+    "America Chavez — multiverse key",
+    "Post-credits: Clea appears"
+   ]
+  },
+  {
+   "phase": 4,
+   "year": "2022",
+   "title": "Thor: Love and Thunder",
+   "tmdbId": 616037,
+   "heroes": [
+    "Thor",
+    "Jane Foster / Mighty Thor"
+   ],
+   "chars": [
+    "Thor",
+    "Jane Foster / Mighty Thor",
+    "Valkyrie",
+    "Gorr the God Butcher",
+    "Korg"
+   ],
+   "desc": "Thor searches for inner peace while Gorr the God Butcher targets all gods. Jane Foster wields Mjolnir as the Mighty Thor.",
+   "connections": [
+    "Post-credits: Hercules introduced as antagonist",
+    "Guardians leave — Thor on his own again"
+   ]
+  },
+  {
+   "phase": 4,
+   "year": "2022",
+   "title": "Black Panther: Wakanda Forever",
+   "tmdbId": 505642,
+   "heroes": [
+    "Shuri / Black Panther",
+    "Okoye",
+    "Nakia"
+   ],
+   "chars": [
+    "Shuri",
+    "Okoye",
+    "Nakia",
+    "M'Baku",
+    "Namor",
+    "Ironheart / Riri Williams",
+    "Everett Ross",
+    "Valentina"
+   ],
+   "desc": "Wakanda mourns King T'Challa and faces a new threat in the hidden underwater kingdom of Talokan, led by Namor. Shuri becomes the new Black Panther.",
+   "connections": [
+    "Namor introduced — Talokan nation added to MCU",
+    "Post-credits: T'Challa's son Toussaint revealed"
+   ]
+  },
+  {
+   "phase": 5,
+   "year": "2023",
+   "title": "Ant-Man and the Wasp: Quantumania",
+   "tmdbId": 640146,
+   "heroes": [
+    "Scott Lang / Ant-Man",
+    "Hope van Dyne / Wasp"
+   ],
+   "chars": [
+    "Scott Lang / Ant-Man",
+    "Hope van Dyne / Wasp",
+    "Hank Pym",
+    "Janet van Dyne",
+    "Cassie Lang",
+    "Kang the Conqueror",
+    "MODOK"
+   ],
+   "desc": "The Lang/Van Dyne family is sucked into the Quantum Realm and must face Kang the Conqueror, the central villain of the Multiverse Saga.",
+   "connections": [
+    "Kang = main villain of Multiverse Saga",
+    "Post-credits: Council of Kangs, Victor Timely appears"
+   ]
+  },
+  {
+   "phase": 5,
+   "year": "2023",
+   "title": "Guardians of the Galaxy Vol. 3",
+   "tmdbId": 447365,
+   "heroes": [
+    "Peter Quill / Star-Lord",
+    "Rocket",
+    "Groot",
+    "Gamora"
+   ],
+   "chars": [
+    "Peter Quill / Star-Lord",
+    "Gamora",
+    "Drax",
+    "Rocket",
+    "Groot",
+    "Mantis",
+    "Nebula",
+    "Adam Warlock",
+    "High Evolutionary"
+   ],
+   "desc": "The Guardians embark on a mission to save Rocket's life, revealing his tragic origins. An emotional farewell to the original team.",
+   "connections": [
+    "Adam Warlock finally appears",
+    "Guardians disband — Rocket leads new team"
+   ]
+  },
+  {
+   "phase": 5,
+   "year": "2023",
+   "title": "The Marvels",
+   "tmdbId": 609681,
+   "heroes": [
+    "Carol Danvers / Captain Marvel",
+    "Monica Rambeau",
+    "Kamala Khan / Ms. Marvel"
+   ],
+   "chars": [
+    "Carol Danvers / Captain Marvel",
+    "Monica Rambeau",
+    "Kamala Khan / Ms. Marvel",
+    "Nick Fury",
+    "Dar-Benn"
+   ],
+   "desc": "Carol Danvers, Monica Rambeau, and Kamala Khan swap places every time they use their powers.",
+   "connections": [
+    "Monica Rambeau enters the multiverse",
+    "Post-credits: Monica meets Beast (X-Men connection)"
+   ]
+  },
+  {
+   "phase": 5,
+   "year": "2024",
+   "title": "Deadpool & Wolverine",
+   "tmdbId": 533535,
+   "heroes": [
+    "Wade Wilson / Deadpool",
+    "Logan / Wolverine"
+   ],
+   "chars": [
+    "Wade Wilson / Deadpool",
+    "Logan / Wolverine",
+    "Cassandra Nova",
+    "Paradox",
+    "Lady Deadpool"
+   ],
+   "desc": "Deadpool is recruited by the TVA and brings a reluctant Wolverine along on a multiverse-spanning mission. First R-rated MCU film.",
+   "connections": [
+    "X-Men / Fox Marvel now officially in MCU",
+    "TVA from Loki series appears"
+   ]
+  },
+  {
+   "phase": 5,
+   "year": "2025",
+   "title": "Captain America: Brave New World",
+   "tmdbId": 822119,
+   "heroes": [
+    "Sam Wilson / Captain America"
+   ],
+   "chars": [
+    "Sam Wilson / Captain America",
+    "Thaddeus Ross / Red Hulk",
+    "Joaquin Torres",
+    "Leader"
+   ],
+   "desc": "Sam Wilson operates as the new Captain America and must stop a political conspiracy involving President Ross, who secretly becomes the Red Hulk.",
+   "connections": [
+    "Sam becomes full Captain America",
+    "Thaddeus Ross returns as Red Hulk",
+    "Sets up Thunderbolts"
+   ]
+  },
+  {
+   "phase": 5,
+   "year": "2025",
+   "title": "Thunderbolts*",
+   "tmdbId": 986056,
+   "heroes": [
+    "Yelena Belova",
+    "Bucky Barnes"
+   ],
+   "chars": [
+    "Yelena Belova",
+    "John Walker / US Agent",
+    "Ghost",
+    "Red Guardian",
+    "Bucky Barnes / Winter Soldier",
+    "Bob Reynolds / Sentry",
+    "Contessa Valentina"
+   ],
+   "desc": "A team of anti-heroes assembled by Valentina face the enigmatic Bob Reynolds, the Sentry.",
+   "connections": [
+    "Follows from Black Widow, Falcon & Winter Soldier",
+    "Valentina's plans revealed",
+    "Sentry = major new cosmic-level character"
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Tony Stark / Iron Man",
+   "alias": "Iron Man",
+   "match": "tony stark",
+   "films": [
+    "Iron Man",
+    "Iron Man 2",
+    "The Avengers",
+    "Iron Man 3",
+    "Avengers: Age of Ultron",
+    "Captain America: Civil War",
+    "Spider-Man: Homecoming",
+    "Avengers: Infinity War",
+    "Avengers: Endgame"
+   ],
+   "phases": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3
+   ],
+   "color": 0,
+   "sceneFilm": "Iron Man",
+   "imageOverride": null
+  },
+  {
+   "name": "Steve Rogers / Captain America",
+   "alias": "Captain America",
+   "match": "steve rogers",
+   "films": [
+    "Captain America: The First Avenger",
+    "The Avengers",
+    "Captain America: The Winter Soldier",
+    "Avengers: Age of Ultron",
+    "Captain America: Civil War",
+    "Avengers: Infinity War",
+    "Avengers: Endgame"
+   ],
+   "phases": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "color": 1,
+   "sceneFilm": "Captain America: The First Avenger",
+   "imageOverride": null
+  },
+  {
+   "name": "Thor",
+   "alias": "God of Thunder",
+   "match": "thor",
+   "films": [
+    "Thor",
+    "The Avengers",
+    "Thor: The Dark World",
+    "Avengers: Age of Ultron",
+    "Thor: Ragnarok",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Thor: Love and Thunder"
+   ],
+   "phases": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4
+   ],
+   "color": 2,
+   "sceneFilm": "Thor: Ragnarok",
+   "imageOverride": null
+  },
+  {
+   "name": "Bruce Banner / Hulk",
+   "alias": "The Incredible Hulk",
+   "match": "bruce banner",
+   "films": [
+    "The Incredible Hulk",
+    "The Avengers",
+    "Avengers: Age of Ultron",
+    "Thor: Ragnarok",
+    "Avengers: Infinity War",
+    "Avengers: Endgame"
+   ],
+   "phases": [
+    1,
+    1,
+    2,
+    3,
+    3,
+    3
+   ],
+   "color": 3,
+   "sceneFilm": "Thor: Ragnarok",
+   "imageOverride": null
+  },
+  {
+   "name": "Natasha Romanoff / Black Widow",
+   "alias": "Black Widow",
+   "match": "natasha",
+   "films": [
+    "Iron Man 2",
+    "The Avengers",
+    "Captain America: The Winter Soldier",
+    "Avengers: Age of Ultron",
+    "Captain America: Civil War",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Black Widow"
+   ],
+   "phases": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4
+   ],
+   "color": 4,
+   "sceneFilm": "Black Widow",
+   "imageOverride": null
+  },
+  {
+   "name": "Clint Barton / Hawkeye",
+   "alias": "Hawkeye",
+   "match": "clint barton",
+   "films": [
+    "Thor",
+    "The Avengers",
+    "Avengers: Age of Ultron",
+    "Captain America: Civil War",
+    "Avengers: Infinity War",
+    "Avengers: Endgame"
+   ],
+   "phases": [
+    1,
+    1,
+    2,
+    3,
+    3,
+    3
+   ],
+   "color": 5,
+   "sceneFilm": "The Avengers",
+   "imageOverride": null
+  },
+  {
+   "name": "Nick Fury",
+   "alias": "Director of SHIELD",
+   "match": "nick fury",
+   "films": [
+    "Iron Man",
+    "Iron Man 2",
+    "Thor",
+    "The Avengers",
+    "Captain America: The Winter Soldier",
+    "Avengers: Age of Ultron",
+    "Captain Marvel",
+    "Spider-Man: Far From Home"
+   ],
+   "phases": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3
+   ],
+   "color": 6,
+   "sceneFilm": "Captain Marvel",
+   "imageOverride": null
+  },
+  {
+   "name": "Thanos",
+   "alias": "The Mad Titan",
+   "match": "thanos",
+   "films": [
+    "The Avengers",
+    "Guardians of the Galaxy",
+    "Avengers: Age of Ultron",
+    "Avengers: Infinity War",
+    "Avengers: Endgame"
+   ],
+   "phases": [
+    1,
+    2,
+    2,
+    3,
+    3
+   ],
+   "color": 7,
+   "sceneFilm": "Avengers: Infinity War",
+   "imageOverride": null
+  },
+  {
+   "name": "Loki",
+   "alias": "God of Mischief",
+   "match": "loki",
+   "films": [
+    "Thor",
+    "The Avengers",
+    "Thor: The Dark World",
+    "Thor: Ragnarok",
+    "Avengers: Infinity War",
+    "Avengers: Endgame"
+   ],
+   "phases": [
+    1,
+    1,
+    2,
+    3,
+    3,
+    3
+   ],
+   "color": 2,
+   "sceneFilm": "Thor",
+   "imageOverride": null
+  },
+  {
+   "name": "Wanda Maximoff / Scarlet Witch",
+   "alias": "Scarlet Witch",
+   "match": "wanda",
+   "films": [
+    "Avengers: Age of Ultron",
+    "Captain America: Civil War",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Doctor Strange in the Multiverse of Madness"
+   ],
+   "phases": [
+    2,
+    3,
+    3,
+    3,
+    4
+   ],
+   "color": 1,
+   "sceneFilm": "Doctor Strange in the Multiverse of Madness",
+   "imageOverride": null
+  },
+  {
+   "name": "Stephen Strange / Doctor Strange",
+   "alias": "Sorcerer Supreme",
+   "match": "stephen strange",
+   "films": [
+    "Doctor Strange",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Spider-Man: No Way Home",
+    "Doctor Strange in the Multiverse of Madness"
+   ],
+   "phases": [
+    3,
+    3,
+    3,
+    4,
+    4
+   ],
+   "color": 3,
+   "sceneFilm": "Doctor Strange in the Multiverse of Madness",
+   "imageOverride": null
+  },
+  {
+   "name": "Peter Parker / Spider-Man",
+   "alias": "Spider-Man",
+   "match": "peter parker",
+   "films": [
+    "Captain America: Civil War",
+    "Spider-Man: Homecoming",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Spider-Man: Far From Home",
+    "Spider-Man: No Way Home"
+   ],
+   "phases": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    4
+   ],
+   "color": 1,
+   "sceneFilm": "Spider-Man: No Way Home",
+   "imageOverride": null
+  },
+  {
+   "name": "T'Challa / Black Panther",
+   "alias": "Black Panther",
+   "match": "t'challa",
+   "films": [
+    "Captain America: Civil War",
+    "Black Panther",
+    "Avengers: Infinity War",
+    "Avengers: Endgame"
+   ],
+   "phases": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "color": 0,
+   "sceneFilm": "Avengers: Endgame",
+   "imageOverride": null
+  },
+  {
+   "name": "Carol Danvers / Captain Marvel",
+   "alias": "Captain Marvel",
+   "match": "carol danvers",
+   "films": [
+    "Captain Marvel",
+    "Avengers: Endgame",
+    "The Marvels"
+   ],
+   "phases": [
+    3,
+    3,
+    5
+   ],
+   "color": 5,
+   "sceneFilm": "The Marvels",
+   "imageOverride": null
+  },
+  {
+   "name": "Scott Lang / Ant-Man",
+   "alias": "Ant-Man",
+   "match": "scott lang",
+   "films": [
+    "Ant-Man",
+    "Captain America: Civil War",
+    "Avengers: Endgame",
+    "Ant-Man and the Wasp",
+    "Ant-Man and the Wasp: Quantumania"
+   ],
+   "phases": [
+    2,
+    3,
+    3,
+    3,
+    5
+   ],
+   "color": 4,
+   "sceneFilm": "Ant-Man and the Wasp: Quantumania",
+   "imageOverride": null
+  },
+  {
+   "name": "Sam Wilson / Falcon",
+   "alias": "Captain America (new)",
+   "match": "sam wilson",
+   "films": [
+    "Captain America: The Winter Soldier",
+    "Avengers: Age of Ultron",
+    "Captain America: Civil War",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Captain America: Brave New World"
+   ],
+   "phases": [
+    2,
+    2,
+    3,
+    3,
+    3,
+    5
+   ],
+   "color": 2,
+   "sceneFilm": "Captain America: Brave New World",
+   "imageOverride": null
+  },
+  {
+   "name": "Peter Quill / Star-Lord",
+   "alias": "Star-Lord",
+   "match": "peter quill",
+   "films": [
+    "Guardians of the Galaxy",
+    "Guardians of the Galaxy Vol. 2",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Guardians of the Galaxy Vol. 3"
+   ],
+   "phases": [
+    2,
+    3,
+    3,
+    3,
+    5
+   ],
+   "color": 6,
+   "sceneFilm": "Guardians of the Galaxy Vol. 3",
+   "imageOverride": null
+  },
+  {
+   "name": "Bucky Barnes / Winter Soldier",
+   "alias": "Winter Soldier",
+   "match": "bucky",
+   "films": [
+    "Captain America: The First Avenger",
+    "Captain America: The Winter Soldier",
+    "Captain America: Civil War",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Thunderbolts*"
+   ],
+   "phases": [
+    1,
+    2,
+    3,
+    3,
+    3,
+    5
+   ],
+   "color": 7,
+   "sceneFilm": "Thunderbolts*",
+   "imageOverride": null
+  },
+  {
+   "name": "Nebula",
+   "alias": "Daughter of Thanos",
+   "match": "nebula",
+   "films": [
+    "Guardians of the Galaxy",
+    "Guardians of the Galaxy Vol. 2",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Guardians of the Galaxy Vol. 3"
+   ],
+   "phases": [
+    2,
+    3,
+    3,
+    3,
+    5
+   ],
+   "color": 3,
+   "sceneFilm": "Guardians of the Galaxy Vol. 3",
+   "imageOverride": null
+  },
+  {
+   "name": "Yelena Belova",
+   "alias": "Black Widow (new)",
+   "match": "yelena",
+   "films": [
+    "Black Widow",
+    "Thunderbolts*"
+   ],
+   "phases": [
+    4,
+    5
+   ],
+   "color": 4,
+   "sceneFilm": "Thunderbolts*",
+   "imageOverride": null
+  }
+ ],
+ "connections": [
+  {
+   "type": "origin",
+   "title": "The Avengers Initiative",
+   "desc": "Nick Fury recruits Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye across Phases 1-2. Each solo film builds toward The Avengers.",
+   "films": [
+    "Iron Man",
+    "Captain America: The First Avenger",
+    "Thor",
+    "The Incredible Hulk",
+    "The Avengers"
+   ]
+  },
+  {
+   "type": "shared-hero",
+   "title": "Iron Man and Spider-Man",
+   "desc": "Tony Stark mentors Peter Parker across multiple films. Tony's death in Endgame drives Peter's arc in Far From Home and No Way Home.",
+   "films": [
+    "Captain America: Civil War",
+    "Spider-Man: Homecoming",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Spider-Man: Far From Home"
+   ]
+  },
+  {
+   "type": "villain",
+   "title": "Thanos — The Infinity Saga",
+   "desc": "Thanos is foreshadowed as early as The Avengers (2012) and acts through proxies in multiple films before the climax of Infinity War and Endgame.",
+   "films": [
+    "The Avengers",
+    "Guardians of the Galaxy",
+    "Avengers: Age of Ultron",
+    "Avengers: Infinity War",
+    "Avengers: Endgame"
+   ]
+  },
+  {
+   "type": "post-credits",
+   "title": "The Tesseract / Space Stone",
+   "desc": "The Tesseract links Captain America, The Avengers, and Captain Marvel across decades of in-universe history.",
+   "films": [
+    "Captain America: The First Avenger",
+    "The Avengers",
+    "Thor: The Dark World",
+    "Avengers: Infinity War",
+    "Captain Marvel"
+   ]
+  },
+  {
+   "type": "shared-hero",
+   "title": "Captain America's Legacy",
+   "desc": "Steve Rogers hands the shield to Sam Wilson at the end of Endgame. Sam becomes Captain America in Brave New World.",
+   "films": [
+    "Captain America: Civil War",
+    "Avengers: Endgame",
+    "Captain America: Brave New World"
+   ]
+  },
+  {
+   "type": "post-credits",
+   "title": "The Quantum Realm & Time Travel",
+   "desc": "Introduced in Ant-Man, expanded in Ant-Man and the Wasp, the Quantum Realm enables the time heist in Endgame. Returns in Quantumania.",
+   "films": [
+    "Ant-Man",
+    "Ant-Man and the Wasp",
+    "Avengers: Endgame",
+    "Ant-Man and the Wasp: Quantumania"
+   ]
+  },
+  {
+   "type": "villain",
+   "title": "The Multiverse Opens",
+   "desc": "Doctor Strange, Loki, No Way Home, Multiverse of Madness, and Quantumania all fracture the multiverse, setting up the Multiverse Saga against Kang.",
+   "films": [
+    "Doctor Strange",
+    "Spider-Man: No Way Home",
+    "Doctor Strange in the Multiverse of Madness",
+    "Ant-Man and the Wasp: Quantumania"
+   ]
+  },
+  {
+   "type": "shared-hero",
+   "title": "Guardians of the Galaxy — Cosmic Family",
+   "desc": "The five Guardians appear across three solo films and both Avengers crossovers before disbanding in Vol. 3.",
+   "films": [
+    "Guardians of the Galaxy",
+    "Guardians of the Galaxy Vol. 2",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Guardians of the Galaxy Vol. 3"
+   ]
+  },
+  {
+   "type": "origin",
+   "title": "Wakanda — From Secret to Open",
+   "desc": "First mentioned in Ultron, Wakanda becomes the site of the final battle in Infinity War and a global power by Wakanda Forever.",
+   "films": [
+    "Avengers: Age of Ultron",
+    "Captain America: Civil War",
+    "Black Panther",
+    "Avengers: Infinity War",
+    "Avengers: Endgame",
+    "Black Panther: Wakanda Forever"
+   ]
+  },
+  {
+   "type": "post-credits",
+   "title": "HYDRA Within SHIELD",
+   "desc": "The Winter Soldier reveals HYDRA has been embedded in SHIELD since its founding in WWII, dissolving SHIELD entirely.",
+   "films": [
+    "Captain America: The First Avenger",
+    "The Avengers",
+    "Captain America: The Winter Soldier"
+   ]
+  },
+  {
+   "type": "villain",
+   "title": "Kang the Conqueror — The New Threat",
+   "desc": "Kang variants appear in Loki and Quantumania. The Council of Kangs positions the time-traveling conqueror as the overarching threat of the Multiverse Saga.",
+   "films": [
+    "Ant-Man and the Wasp: Quantumania",
+    "Deadpool & Wolverine"
+   ]
+  },
+  {
+   "type": "shared-hero",
+   "title": "The Black Widow Line",
+   "desc": "Natasha Romanoff's legacy continues through Yelena Belova, introduced in Black Widow and active in Thunderbolts*.",
+   "films": [
+    "Black Widow",
+    "Thunderbolts*"
+   ]
+  }
+ ]
+}
